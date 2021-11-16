@@ -8,3 +8,7 @@ main .col {
     display: inline;
     vertical-align: middle;
 }
+h1 {
+    color: #1e88e5;  /*blue darken-1*/
+    text-align: center;
+}
