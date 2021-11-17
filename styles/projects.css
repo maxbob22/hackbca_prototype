@@ -12,3 +12,7 @@ main .col {
 table th{
     width: auto !important;
 }
+
+table tr{
+    border: 0
+}
