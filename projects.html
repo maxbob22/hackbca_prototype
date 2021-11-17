@@ -42,36 +42,45 @@
 
   <main>
     <div class="container">
-      <h1>Projects</h1>
-    <div class="container bg-info">
-      <h1 style="color: white;">Create/Modify Projects</h1>
-    </div>
+            
+      <h1>Projects List</h1>
+      
+      <blockquote>
+          Click on the project name for more details! 
+          Click on <i class="material-icons tiny">sort</i> to sort by that column, or items in <i class="material-icons tiny">filter_list</i> columns to filter by that item.
+        </blockquote>
+        <div class="row">
+            <div class="col l3 s12 "> <i class="left material-icons">sort</i>Sorted by: Date / Time</div> 
+            <div class="col l3 offset-l6 ">
+                <!-- Position diffeently (left) for mobile -->
+                <div class="right hide-on-small-only"><i class="left material-icons">filter_list</i>Filter: None</div>
+            </div>
+
+        <table class="text-center table-responsive">
+          <thead>
+              <tr>
+              <th>Event</th>
+              <th>Location  <a href="?sort=location">
+                      <i class="material-icons">sort</i></a> 
+                      <i class="material-icons">filter_list</i>
+              </th>
+              <th>Date / Time 
+                  <a href="?sort=datetime"><i class="material-icons">sort</i></a>
+              </th>
+              <th>Duration</th>
+              <th>Type  
+                  <a href="?sort=type"><i class="material-icons">sort</i></a>
+                  <i class="material-icons">filter_list</i>
+              </th>
+              <th>Interest<i class="material-icons">sort</i></th>
+              </tr>
+              <!-- ADMIN ONLY BUTTONS -->
+              <th>Admin Op</th>
+          </thead>  
+        </table>
+      </div>
   </main>
 
-<<<<<<< HEAD
-    <footer class="page-footer bg-primary">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12 text-white">
-            <h5>Sponsors</h5>
-            <p >hackBCA is brought to you by:</p>
-            <ul>
-              <li>BCA PPO</li>
-              <li>Tech-Pa</li>
-              <li>&lt;Corporate Sponsors&gt;</li>
-              <li>Wanna join this list? Sponsor us!</li>
-            </ul>
-          </div>
-          <div class="col l4 offset-l2 s12 text-white">
-            <h5>Contact Us</h5>
-            <ul>
-              <li>Twitter: @hackbca</li>
-              <li>Instagram: @hackbca</li>
-              <li>Facebook: @hackbca</li>
-              <li>Email: hackbca@_____</li>
-            </ul>
-          </div>
-=======
   <footer class="page-footer">
     <div class="container">
       <div class="row">
@@ -93,7 +102,6 @@
             <li>Facebook: @hackbca</li>
             <li>Email: hackbca@_____</li>
           </ul>
->>>>>>> 40b86ea5d3f06291d6f974a6a5bcaae6065eb8e5
         </div>
       </div>
       <div class="footer-copyright text-white">
