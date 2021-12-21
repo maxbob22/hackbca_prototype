@@ -40,38 +40,50 @@
       </nav>
     </header>
 
-  <main>
+  <main style="background-color: #90caf9;">
     <div class="container">
-      <h1>Projects</h1>
-    <div class="container bg-info">
-      <h1 style="color: white;">Create/Modify Projects</h1>
-    </div>
+            
+      <h1>Projects List</h1>
+      
+      <blockquote>
+          Click on the project name for more details! 
+          Click on <i class="material-icons tiny">sort</i> to sort by that column, or items in <i class="material-icons tiny">filter_list</i> columns to filter by that item.
+        </blockquote>
+        <div class="row">
+            <div class="col g-lg-3 col-lg-2"> <i class="left material-icons">sort</i>Sorted by: Date / Time</div> 
+            <div class="col g-lg-3 offset-lg-6 ">
+                <!-- Position diffeently (left) for mobile -->
+                <div><i class="left material-icons">filter_list</i>Filter: None</div>
+            </div>
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Project</th>
+                  <th scope="col">Group</th>
+                  <th scope="col">Platform</th>
+                  <th scope="col">Email Address</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><a href="/projects/1.html">Super Cool Project </a></th>
+                  <td>Zach, Max, and Jeremy</td>
+                  <td>Website</td>
+                  <td>zacdef22@bergen.org</td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="/projects/2.html">Capstone</a></th>
+                  <td>Max, Jeremy, and Zach</td>
+                  <td>Web App</td>
+                  <td>maxbob22@bergen.org</td>
+                </tr>
+              </tbody>
+            </table>
+            <a href="/createProjectForm.html" class="btn text-white" style="background-color: #d84315;">Add Your Project</a>
+      </div>
   </main>
 
-<<<<<<< HEAD
-    <footer class="page-footer bg-primary">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12 text-white">
-            <h5>Sponsors</h5>
-            <p >hackBCA is brought to you by:</p>
-            <ul>
-              <li>BCA PPO</li>
-              <li>Tech-Pa</li>
-              <li>&lt;Corporate Sponsors&gt;</li>
-              <li>Wanna join this list? Sponsor us!</li>
-            </ul>
-          </div>
-          <div class="col l4 offset-l2 s12 text-white">
-            <h5>Contact Us</h5>
-            <ul>
-              <li>Twitter: @hackbca</li>
-              <li>Instagram: @hackbca</li>
-              <li>Facebook: @hackbca</li>
-              <li>Email: hackbca@_____</li>
-            </ul>
-          </div>
-=======
   <footer class="page-footer">
     <div class="container">
       <div class="row">
@@ -93,7 +105,6 @@
             <li>Facebook: @hackbca</li>
             <li>Email: hackbca@_____</li>
           </ul>
->>>>>>> 40b86ea5d3f06291d6f974a6a5bcaae6065eb8e5
         </div>
       </div>
       <div class="footer-copyright text-white">
