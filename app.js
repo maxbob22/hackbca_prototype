@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
+var projectsRouter = require('./routes/projects')
 var usersRouter = require('./routes/users');
 
 var app = express();
@@ -21,6 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/projects', projectsRouter)
 
 var hbs = require('hbs');
 hbs.registerPartials(__dirname + '/views/partials', function (err) {;});
