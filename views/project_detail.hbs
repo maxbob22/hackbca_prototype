@@ -1,0 +1,46 @@
+{{#with project}}
+<main>
+        <div class="container"> 
+          <div class="row">
+            <div class="card align-self-center">
+              <img class="card-img-top" src="/images/website.png" alt="Super Cool Image">
+              <div class="card-img-overlay text-white container">
+                <h2 style="text-shadow: 2px 2px rgb(80, 204, 241); font-size: 50px;" >{{project_name}}</h2>
+              </div>
+              <div class="card-body">
+                  <button type="button" class="btn-light float-end">Interested</button>
+                  <p class="card-text">This is a super cool project that is going to be very intersting and innovative.</p>
+
+                  <div class="row justify-content-center">
+                    <div class="col-auto">
+                      <table class="table table-responsive table-borderless">
+                        <thead>
+                          <tr>
+                            <th width="33%" scope="col">Email Address</th>
+                            <th width="33%" scope="col">Group Members</th>
+                            <th width="33%" scope="col">Project Type</th>
+                            <th width="33%" scope="col">Tech Stack</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>{{project_email}}</td>
+                            <td>{{project_creators}}</td>
+                            <td>{{project_type}}</td>
+                            <td>{{project_name}}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <a href="/createProjectForm.html" class="btn text-white" style="background-color:cornflowerblue">Edit Your Project</a>
+            </div>
+            
+            </div>
+            
+          </div>
+
+      </main>
+      {{/with}}
