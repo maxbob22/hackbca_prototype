@@ -12,4 +12,19 @@ router.get('/', function(req, res, next) {
                           });
 });
 
+router.get('/:project_id', function(req, res, next) {
+  let project_id = req.params.project_id;
+
+  // Find matching event in the data (a real database will be easier to query)
+  let project = project_data.find(function (proj) { return proj.project_id == project_id });
+
+
+  if (project === undefined) {
+    next(); //pass along to other handlers (send 404)
+  }
+  else {
+    res.render('project_detail', { title: project.project_name, styles: ["tables", "event"], project: project });
+  }
+});
+
 module.exports = router;
