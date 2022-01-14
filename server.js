@@ -20,7 +20,7 @@ const projectSchema = {
 const Project = mongoose.model("projects", projectSchema)
 
 app.get("/", function(req, res) {
-    res.sendFile(__dirname + "/createProjectForm.html")
+    res.sendFile(__dirname + "/createProjectForm")
 })
 
 app.post("/", function(req, res){
@@ -37,6 +37,6 @@ app.post("/", function(req, res){
     res.redirect("/");
 })
 
-app.listen(3000, function() {
+app.listen(59124, function() {
     console.log("server is running on 3000");
 })
